@@ -7,7 +7,7 @@ XBook::XBook()
 XBook::XBook(int BarCode, const std::string Title, const std::string Author,
              const std::string Publisher, int Year, float Price, int NoPages,
              std::string Label)
-    :XProduct(BarCode, Title, Author, Publisher, Year, Price),
+    :XProduct(BarCode, Title, Author, Publisher, Year, CalcPrice(Price)),
       m_noPages(std::move(NoPages)),
       m_label(std::move(Label))
 {}
@@ -27,5 +27,3 @@ void XBook::SetLabel(std::string Label){
 void XBook::SetNoPages(int NoPages){
     m_noPages = std::move(NoPages);
 }
-
-

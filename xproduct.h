@@ -15,7 +15,6 @@ protected:
     std::string m_author;
     std::string m_publisher;
     int m_year;
-
     float m_price;
 
 
@@ -24,6 +23,8 @@ public:
     XProduct(int BarCode, std::string const Title, std::string const Author,
                 std::string const Publisher, int Year, float Price);
 
+    virtual ~XProduct();
+//    ~XProduct();
 
     int GetBarCode() const;
     const std::string& GetTitle() const;
@@ -40,6 +41,7 @@ public:
     void setPrice(float Price);
 
     void printProductData() const;
+
 
 };
 
