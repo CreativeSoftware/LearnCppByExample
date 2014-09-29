@@ -7,7 +7,7 @@
 class XBook : public XProduct
 {
 
-float CalcPrice(float Price);
+float CalcPrice(std::string Label);
 
 protected:
     int m_noPages;
@@ -22,6 +22,7 @@ public:
     const std::string & GetLabel() const;
     int GetNoPages() const;
 
+    void SetPrice(std::string Label);
     void SetLabel(std::string Label);
     void SetNoPages(int NoPages);
 

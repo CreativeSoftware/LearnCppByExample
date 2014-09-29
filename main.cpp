@@ -11,8 +11,8 @@ using namespace std;
 int main()
 {
 
-//      XBook book(1002,"title", "great author", "awesome pub", 2004, 300, "Blue" );
-//      book.printProductData();
+      XBook book(1002,"title", "great author", "awesome pub", 102.0, 2004, 300, "Blue" );
+      book.printProductData();
 
 return 0;
 }

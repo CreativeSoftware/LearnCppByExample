@@ -14,6 +14,7 @@ XProduct::XProduct(int BarCode, const std::string Title, const std::string Autho
       m_price(std::move(Price))
 
 {}
+XProduct::~XProduct(){}
 
 int XProduct::GetBarCode() const {
     return m_barCode;

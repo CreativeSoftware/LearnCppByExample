@@ -24,7 +24,6 @@ public:
                 std::string const Publisher, int Year, float Price);
 
     virtual ~XProduct();
-//    ~XProduct();
 
     int GetBarCode() const;
     const std::string& GetTitle() const;
