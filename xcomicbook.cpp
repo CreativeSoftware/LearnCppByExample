@@ -5,9 +5,9 @@ XComicBook::XComicBook()
 }
 
 XComicBook::XComicBook(int BarCode, const std::string Title, const std::string Author, const std::string Publisher, int Year,
-                       float Price, int NoPages, std::string Label,
+                       int NoPages, std::string Label,
                        std::string Creator, std::string Universe)
-    :XBook(BarCode, Title, Author, Publisher,Year, Price, NoPages, Label),
+    :XBook(BarCode, Title, Author, Publisher, Year,  NoPages, Label),
     m_creator(std::move(Creator)),
     m_universe(std::move(Universe))
 {}
@@ -27,3 +27,4 @@ void XComicBook::SetCreator(std::string Creator){
 void XComicBook::SetUniverse(std::string Universe){
     m_universe = std::move(Universe);
 }
+

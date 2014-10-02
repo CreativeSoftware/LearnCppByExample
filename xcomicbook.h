@@ -12,7 +12,7 @@ class XComicBook: public XBook
 public:
     XComicBook();
     XComicBook(int BarCode, std::string const Title, std::string const Author,
-               std::string const Publisher, int Year, float Price, int NoPages, std::string Label,
+               std::string const Publisher, int Year, int NoPages, std::string Label,
                std::string Creator, std::string Universe);
 
     const std::string & GetCreator() const;
@@ -20,6 +20,8 @@ public:
 
     void SetCreator(std::string Creator);
     void SetUniverse(std::string Universe);
+
+
 };
 
 #endif // XCOMICBOOK_H

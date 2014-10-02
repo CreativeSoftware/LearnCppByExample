@@ -13,10 +13,14 @@ protected:
     int m_noPages;
     std::string m_label;
 
+
+
 public:
     XBook();
+    //XBook(int BarCode, std::string const Title, std::string const Author,
+      //    std::string const Publisher, int Year, float Price, int NoPages, std::string Label);
     XBook(int BarCode, std::string const Title, std::string const Author,
-          std::string const Publisher, int Year, float Price, int NoPages, std::string Label);
+          std::string const Publisher, int Year, int NoPages, std::string Label);
 
 
     const std::string & GetLabel() const;

@@ -23,7 +23,7 @@ public:
     XProduct(int BarCode, std::string const Title, std::string const Author,
                 std::string const Publisher, int Year, float Price);
 
-    virtual ~XProduct();
+    virtual ~XProduct() = 0;
 
     int GetBarCode() const;
     const std::string& GetTitle() const;
